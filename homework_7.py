@@ -39,8 +39,8 @@ def main():
     text = input('Введите текст песни ')
     print(check_rhythm(text))
     
-    text = input('Введите кортеж ')
-    print(convert_to_tuple(text))  
+    string = input('Введите кортеж ')
+    print(convert_to_tuple(string))  
 
 if __name__ == '__main__':
     main()
