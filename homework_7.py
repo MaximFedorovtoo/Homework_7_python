@@ -13,7 +13,7 @@
 def check_rhythm(poem):
     lines = poem.split()      
     syllables = [sum(1 for letter in phrase if letter in 'аяуюоеёэиы') for phrase in lines]
-    return 'Парам пам-пам' if len(set(syllables)) == 1 else 'Пам парам'
+    return 'Парам пам-пам' if len(set(map(lambda x: x % 2, syllables))) == 1 else 'Пам парам'
         
 
 
