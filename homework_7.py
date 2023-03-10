@@ -28,10 +28,8 @@ def check_rhythm(poem):
 # ((house, дом), (car, машина), (men, человек), (tree, дерево))
 
     
-def convert_to_tuple(string):
-    elements = string.split()  
-    tp_list = list(map(lambda x: tuple(x.split('=')), elements)) 
-    tp = tuple(tp_list)  
+def convert_to_tuple(string): 
+    tp = tuple(list(map(lambda x: tuple(x.split('=')), string.split())) )  
     return tp
 
    
